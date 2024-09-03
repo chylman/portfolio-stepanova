@@ -2,34 +2,44 @@
   <div class="container">
     @@if (!context.index) {
       <a class="header__logo" href="index.html" aria-label="Переход на главную">
-        Логотип
+        <div class="w-8 h-8 rounded overflow-hidden">
+          <img src="./img/logo/logo.jpg" alt="Фотография" srcset="./img/logo/logo@2x.jpg 2x"/>
+        </div>
       </a>
     }
     @@if (context.index) {
-      <span class="header__logo">
-        Логотип
-      </span>
+      <div class="header__logo flex">
+        <div class="w-8 h-8 rounded-full overflow-hidden">
+          <img class="w-full h-full object-cover" src="./img/logo/logo.jpg" alt="Фотография" srcset="./img/logo/logo@2x.jpg 2x" width="32" height="32"/>
+        </div>
+        <span>Степанова Мария</span>
+        <span class="block w-5 h-6">
+          <svg class="w-full h-full" width="22" height="24" aria-hidden="true">
+            <use xlink:href="#icon-hand"></use>
+          </svg>
+        </span>
+      </div>
     }
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20" aria-hidden="true">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { is-active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Страница 1</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { is-active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Страница 2</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { is-active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Страница 3</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<!--    <nav class="main-nav">-->
+<!--      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">-->
+<!--        <svg width="20" height="20" aria-hidden="true">-->
+<!--          <use xlink:href="#icon-burger"></use>-->
+<!--        </svg>-->
+<!--      </button>-->
+<!--      <div class="main-nav__wrapper">-->
+<!--        <ul class="main-nav__list">-->
+<!--          <li class="main-nav__item">-->
+<!--            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { is-active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Страница 1</a>-->
+<!--          </li>-->
+<!--          <li class="main-nav__item">-->
+<!--            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { is-active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Страница 2</a>-->
+<!--          </li>-->
+<!--          <li class="main-nav__item">-->
+<!--            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { is-active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Страница 3</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </nav>-->
   </div>
 </header>

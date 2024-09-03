@@ -26,8 +26,9 @@ const syncServer = () => {
     ui: false,
   });
 
-  gulp.watch('source/pug/**/*.pug', gulp.series(html, refresh));
+  gulp.watch('source/html/**/*.html', gulp.series(html, streamStyles, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', streamStyles);
+  gulp.watch(['./tailwind.config.js', 'source/sass/**/*.{scss,sass}'], streamStyles, refresh);
   gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
   gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, html, refresh));
