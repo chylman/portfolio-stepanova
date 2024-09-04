@@ -8,39 +8,46 @@
 </head>
 <body>
 
-  <div style="display: none;">
-    @@include("build/img/sprite_auto.svg")
-  </div>
+<div style="display: none;">
+  @@include("build/img/sprite_auto.svg")
+</div>
 
-  <div class="wrapper">
-    @@include("source/html/base/header.html", {
-      "index": true
-    })
+<div class="wrapper">
+  @@include("source/html/base/header.html", {
+  "index": true
+  })
 
-    <main>
+  <main>
+    <div class="intro bg-black-russian">
       <div class="container">
-        <p><a href="#" data-open-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-open-modal="success">modal--success link</a></p>
-        <p class="border-8 border-amber-400">modal--success link</p>
-        <p class="border-8 border-amber-400 pt-10">modal--success link</p>
+        <h1 class="hidden">Портфолио</h1>
+        <h2 class="text-xl mb-6 text-white">Привет! Меня зовут Маша </h2>
+        <div class="flex flex-col gap-y-4 text-base text-periwinkle">
+          <p>Я продуктовый дизайнер. Создаю интерфейсы, которые полезны для пользователей и выгодны бизнесу. </p>
+          <p>Моя работа основана на анализе данных. Я провожу UX-исследования и обращаюсь к метрикам. Слежу за обратной
+            связью от пользователей, чтобы понимать их потребности и ожидания. Моя цель — создавать лучший
+            пользовательский путь.</p>
+          <p>Сейчас я работаю в <a href="#">SMLT Tech.</a></p>
+        </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    @@include("source/html/base/footer.html")
+  @@include("source/html/base/footer.html")
 
-    @@include("source/html/base/modal.html", {
-      "name": "feedback"
-    })
+  @@include("source/html/base/modal.html", {
+  "name": "feedback"
+  })
 
-    @@include("source/html/base/modal.html", {
-      "name": "success",
-      "fitContent": true,
-      "noScale": true,
-      "mod": "some-mod"
-    })
-  </div>
+  @@include("source/html/base/modal.html", {
+  "name": "success",
+  "fitContent": true,
+  "noScale": true,
+  "mod": "some-mod"
+  })
+</div>
 
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>
