@@ -21,6 +21,7 @@ export default {
         'hawkes-blue': '#D7DCE9',
         'periwinkle': '#CED3E1',
         'black-russian': '#141517',
+        'ebony': '#2B303B',
       },
     },
   },
