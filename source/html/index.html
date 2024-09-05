@@ -18,19 +18,53 @@
   })
 
   <main>
-    <div class="intro bg-black-russian">
-      <div class="container">
-        <h1 class="hidden">Портфолио</h1>
-        <h2 class="text-xl mb-6 text-white">Привет! Меня зовут Маша </h2>
-        <div class="flex flex-col gap-y-4 text-base text-periwinkle">
-          <p>Я продуктовый дизайнер. Создаю интерфейсы, которые полезны для пользователей и выгодны бизнесу. </p>
-          <p>Моя работа основана на анализе данных. Я провожу UX-исследования и обращаюсь к метрикам. Слежу за обратной
-            связью от пользователей, чтобы понимать их потребности и ожидания. Моя цель — создавать лучший
-            пользовательский путь.</p>
-          <p>Сейчас я работаю в <a href="#">SMLT Tech.</a></p>
-        </div>
+    <section class="intro relative pb-10 pt-[73px] bg-black-russian">
+      <div class="intro__bg w-full h-full absolute top-0 left-0 z-0">
+        <img class="opacity-10 w-full h-full object-cover" src="./img/bg/introbg-3.png" width="1440" height="481" alt="Фон"/>
+        <img class="w-full h-full absolute top-0 left-0" src="./img/bg/introbg-2.png" width="1440" height="481" alt="Фон"/>
       </div>
-    </div>
+      <div class="container relative z-10">
+        <h1 class="hidden">Портфолио</h1>
+        <div class="flex max-w-[908px] mx-auto mb-10">
+          <div class="relative w-72 h-64 shrink-0 mr-12">
+            <div class="rounded-full overflow-hidden w-214px aspect-square">
+              <img class="w-full h-full object-cover" src="./img/content/intro/bg.jpg" alt="Фотография" srcset="./img/content/intro/bg@2x.jpg 2x" width="214" height="214"/>
+            </div>
+            <div class="rounded-full overflow-hidden w-214px aspect-square absolute left-0 top-0 translate-x-16 translate-y-8">
+              <img class="w-full h-full object-cover" src="./img/content/intro/photo.png" alt="Фотография" srcset="./img/content/intro/photo@2x.png 2x" width="214" height="214"/>
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <h2 class="text-xl mb-6 text-white w-full">Привет! Меня зовут Маша </h2>
+            <div class="flex flex-col gap-y-4 text-base text-periwinkle">
+              <p>Я продуктовый дизайнер. Создаю интерфейсы, которые полезны для пользователей и выгодны бизнесу. </p>
+              <p>Моя работа основана на анализе данных. Я провожу UX-исследования и обращаюсь к метрикам. Слежу за обратной
+                связью от пользователей, чтобы понимать их потребности и ожидания. Моя цель — создавать лучший
+                пользовательский путь.</p>
+              <p>Сейчас я работаю в <a href="#" class="text-periwinkle hover:text-white transition-colors underline">SMLT Tech.</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="flex mb-4">
+          <p class="text-base text-white">Мои контакты</p>
+          <span class="block w-[22px] h-[20px]"></span>
+        </div>
+        <ul class="flex flex-wrap list-bools text-east-bay">
+          <li class="list-bools__item">
+            <button type="button" class="text-base text-periwinkle hover:text-white transition-colors">e-mail</button>
+          </li>
+          <li class="list-bools__item">
+            <button type="button" class="text-base text-periwinkle hover:text-white transition-colors">telegram</button>
+          </li>
+          <li class="list-bools__item">
+            <button type="button" class="text-base text-periwinkle hover:text-white transition-colors">dribbble</button>
+          </li>
+          <li class="list-bools__item">
+            <button type="button" class="text-base text-periwinkle hover:text-white transition-colors">behance</button>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   @@include("source/html/base/footer.html")

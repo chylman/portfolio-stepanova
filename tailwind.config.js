@@ -22,7 +22,14 @@ export default {
         'periwinkle': '#CED3E1',
         'black-russian': '#141517',
         'ebony': '#2B303B',
+        'east-bay': '#4A5368',
       },
+      width: {
+        '214px': '214px',
+      },
+      height: {
+        '214px': '214px',
+      }
     },
   },
   plugins: [],

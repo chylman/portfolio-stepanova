@@ -1,0 +1,29 @@
+.list-bools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.list-bools__item {
+  display: flex;
+  align-items: center;
+  color: inherit;
+
+  &::after {
+    content: '';
+
+    display: block;
+    width: 8px;
+    height: 8px;
+
+    margin: 0 16px;
+
+    border-radius: 50%;
+    background-color: currentColor;
+    color: inherit;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
