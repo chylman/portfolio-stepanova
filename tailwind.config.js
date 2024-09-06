@@ -3,9 +3,6 @@ export default {
   content: ['./source/**/*.{html,js}'],
   theme: {
     screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
       xl: '1440px',
     },
     container: {
@@ -13,7 +10,9 @@ export default {
       center: true,
     },
     fontSize: {
+      s: ['14px', '171%'],
       base: ['16px', '150%'],
+      l: ['24px', '133%'],
       xl: ['32px', '137%'],
     },
     extend: {
