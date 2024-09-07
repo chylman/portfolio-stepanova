@@ -57,5 +57,9 @@
   },
   "engines": {
     "node": ">=16.15.1"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.6.10",
+    "tippy.js": "^6.3.7"
   }
 }
