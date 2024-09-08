@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import initTippy from './modules/tippy/init-tippy.js';
+import initAnimation from "./modules/animation/init-animation.js";
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initTippy();
+    initAnimation();
   });
 });
 
