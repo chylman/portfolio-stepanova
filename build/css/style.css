@@ -1063,10 +1063,6 @@ video {
   top: 0px;
 }
 
-.bottom-px {
-  bottom: 1px;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -1116,12 +1112,12 @@ video {
   margin-right: 1rem;
 }
 
-.mr-auto {
-  margin-right: auto;
-}
-
 .mr-8 {
   margin-right: 2rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .block {
@@ -2163,14 +2159,14 @@ button,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-east-bay:hover {
   --tw-text-opacity: 1;
   color: rgb(74 83 104 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1440px) {
