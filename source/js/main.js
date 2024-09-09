@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import initTippy from './modules/tippy/init-tippy.js';
-import initAnimation from "./modules/animation/init-animation.js";
+import initTippyContent from './modules/tippy/init-tippy.js';
+import initAnimation from './modules/animation/init-animation.js';
+import initClipboard from './modules/clipboard/init-clipboard.js';
 
 // ---------------------------------
 
@@ -19,8 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    initTippy();
+    initTippyContent();
     initAnimation();
+    initClipboard();
   });
 });
 
