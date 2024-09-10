@@ -1,26 +1,34 @@
+let isPlayed = false;
 const initAnimation = () => {
-  gsap.to('[data-animation-contacts="opacity"]', {
-    opacity: 0,
-    duration: 2,
-    scrollTrigger: {
-      trigger: '[data-animation-contacts="opacity"]', // отсматриваем этот блок по скроллу
-      start: 'top 120px', // начало анимации, когда центр блока стоит по центру экрана
-      scrub: true, // обязательный параметр, чтобы анимация работала по скроллу. можно давать числовое значение
-    },
-  });
-  gsap.to('[data-animation-contacts-header="opacity"]', {
+  const contactsOpacityHeader = gsap.to('[data-animation-contacts-header="opacity"]', {
+    paused: true,
     opacity: 1,
     pointerEvents: 'initial',
-    duration: 2,
-    startAt: {
-      opacity: 0,
-      pointerEvents: 'none',
-    },
+    duration: 0.3,
+    ease: "power4.out",
+    // scrollTrigger: {
+    //   trigger: '[data-animation-contacts="opacity"]',
+    //   start: 'center',
+    //   toggleActions: 'play none reverse none',
+    // },
+  });
+  const contactsOpacity = gsap.to('[data-animation-contacts="opacity"]', {
+    opacity: 0,
+    duration: 0.3,
+    ease: "power4.out",
+    pointerEvents: 'none',
     scrollTrigger: {
-      trigger: '[data-animation-contacts="opacity"]', // отсматриваем этот блок по скроллу
-      start: 'top 60px', // начало анимации, когда центр блока стоит по центру экрана
-      scrub: true, // обязательный параметр, чтобы анимация работала по скроллу. можно давать числовое значение
+      trigger: '[data-animation-contacts="opacity"]',
+      start: 'top',
+      end: 'top',
+      toggleActions: 'play none reverse none',
     },
+    onStart() {
+      contactsOpacityHeader.play();
+    },
+    onReverseComplete() {
+      contactsOpacityHeader.reverse();
+    }
   });
 }
 

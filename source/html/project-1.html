@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>Степанова Мария — Главная</title>
+
+</head>
+<body>
+
+<div style="display: none;">
+  @@include("build/img/sprite_auto.svg")
+</div>
+
+<div class="wrapper">
+  @@include("source/html/base/header.html", {
+  "index": false
+  })
+
+  <main>
+    <section class="container grid grid-cols-[1fr_minmax(0,700px)_minmax(100px,322px)] pt-8">
+      <div class="pt-1 pr-[48px] justify-self-end">
+        <a href="#" class="flex items-center">
+          <span class="block w-4 h-4 mr-2 ">
+            <svg class="w-full h-full" width='16' height='16'>
+              <use xlink:href='#icon-arrow-left'></use>
+            </svg>
+          </span>
+          <span class="text-base text-ebony">Назад</span>
+        </a>
+      </div>
+      <div class="flex w-[700px]"></div>
+      <div class="flex pl-4"></div>
+    </section>
+  </main>
+
+
+  @@include("source/html/base/modal.html", {
+  "name": "feedback"
+  })
+
+  @@include("source/html/base/modal.html", {
+  "name": "success",
+  "fitContent": true,
+  "noScale": true,
+  "mod": "some-mod"
+  })
+</div>
+
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

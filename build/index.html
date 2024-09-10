@@ -21,12 +21,16 @@
   <!-- используйте только для шрифта находящегося на первом экране -->
   <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/style.min.css">
-  <title>ProjectName — Главная</title>
+  <title>Степанова Мария — Главная</title>
 </head>
 
 <body>
   <div style="display: none;">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="icon-arrow-left" viewBox="0 0 16 16">
+        <path d="M6.37996 12.5467C6.25329 12.5467 6.12663 12.5001 6.02663 12.4001L1.97996 8.35341C1.78663 8.16008 1.78663 7.84008 1.97996 7.64674L6.02663 3.60008C6.21996 3.40674 6.53996 3.40674 6.73329 3.60008C6.92663 3.79341 6.92663 4.11341 6.73329 4.30674L3.03996 8.00008L6.73329 11.6934C6.92663 11.8867 6.92663 12.2067 6.73329 12.4001C6.63996 12.5001 6.50663 12.5467 6.37996 12.5467Z" fill="#2B303B" />
+        <path d="M13.6666 8.50008H2.44663C2.17329 8.50008 1.94663 8.27341 1.94663 8.00008C1.94663 7.72674 2.17329 7.50008 2.44663 7.50008H13.6666C13.94 7.50008 14.1666 7.72674 14.1666 8.00008C14.1666 8.27341 13.94 8.50008 13.6666 8.50008Z" fill="#2B303B" />
+      </symbol>
       <symbol id="icon-close" viewBox="0 0 20 20">
         <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
       </symbol>
@@ -51,7 +55,7 @@
             <img class="w-full h-full object-cover" src="./img/content/emoji/hand.jpg" srcset="./img/content/emoji/hand@2x.jpg 2x" alt="Эмодзи привет" width="22" height="24">
           </span>
         </div>
-        <ul class="flex flex-wrap mr-8 list-bools text-periwinkle" data-animation-contacts-header="opacity">
+        <ul class="flex flex-wrap mr-8 list-bools text-periwinkle opacity-0 pointer-events-none" data-animation-contacts-header="opacity">
           <li class="list-bools__item">
             <button type="button" class="text-base text-ebony hover:text-east-bay transition-colors" data-tippy-content="<a href='mailto:stepanova-14-02@yandex.ru'>Stepanova-14-02@yandex.ru</a>
                                         <button type='button'>
@@ -82,7 +86,7 @@
           <img class="w-full h-full absolute top-0 left-0" src="./img/bg/introbg-2.png" width="1440" height="481" alt="Фон" />
         </div>
         <div class="container relative z-10">
-          <h1 class="hidden">Портфолио</h1>
+          <h1 class="visually-hidden">Портфолио</h1>
           <div class="flex max-w-[908px] mx-auto mb-10">
             <div class="relative w-72 h-64 shrink-0 mr-12">
               <div class="rounded-full overflow-hidden w-214px aspect-square">

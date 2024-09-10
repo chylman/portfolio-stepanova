@@ -1,10 +1,14 @@
 <header class="header fixed z-20 w-full bg-white py-[14px] border-b-[1px] border-solid border-hawkes-blue @@if (context.mod) { header--@@mod }">
   <div class="container flex flex-wrap">
     @@if (!context.index) {
-      <a class="header__logo flex items-center mr-auto" href="index.html" aria-label="Переход на главную">
+      <a class="header__logo flex text-base items-center mr-auto" href="index.html" aria-label="Переход на главную">
         <div class="w-8 h-8 mr-4 rounded-full overflow-hidden">
           <img class="w-full h-full object-cover" src="./img/logo/logo.jpg" alt="Фотография" srcset="./img/logo/logo@2x.jpg 2x" width="32" height="32"/>
         </div>
+        <span class="mr-2">Степанова Мария</span>
+        <span class="block w-[22px] h-6">
+          <img class="w-full h-full object-cover" src="./img/content/emoji/hand.jpg" srcset="./img/content/emoji/hand@2x.jpg 2x" alt="Эмодзи привет" width="22" height="24">
+        </span>
       </a>
       <ul class="flex flex-wrap mr-8 list-bools text-periwinkle">
         <li class="list-bools__item">
@@ -39,7 +43,7 @@
           <img class="w-full h-full object-cover" src="./img/content/emoji/hand.jpg" srcset="./img/content/emoji/hand@2x.jpg 2x" alt="Эмодзи привет" width="22" height="24">
         </span>
       </div>
-    <ul class="flex flex-wrap mr-8 list-bools text-periwinkle" data-animation-contacts-header="opacity">
+    <ul class="flex flex-wrap mr-8 list-bools text-periwinkle opacity-0 pointer-events-none" data-animation-contacts-header="opacity">
       <li class="list-bools__item">
         <button type="button" class="text-base text-ebony hover:text-east-bay transition-colors"
                 data-tippy-content="<a href='mailto:stepanova-14-02@yandex.ru'>Stepanova-14-02@yandex.ru</a>
