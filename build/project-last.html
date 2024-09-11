@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Project Name - описание">
+  <!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+  <!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+  <!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+  <!-- используйте только для шрифта находящегося на первом экране -->
+  <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Степанова Мария — Главная</title>
+</head>
+
+<body>
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="icon-arrow-left" viewBox="0 0 16 16">
+        <path d="M6.37996 12.5467C6.25329 12.5467 6.12663 12.5001 6.02663 12.4001L1.97996 8.35341C1.78663 8.16008 1.78663 7.84008 1.97996 7.64674L6.02663 3.60008C6.21996 3.40674 6.53996 3.40674 6.73329 3.60008C6.92663 3.79341 6.92663 4.11341 6.73329 4.30674L3.03996 8.00008L6.73329 11.6934C6.92663 11.8867 6.92663 12.2067 6.73329 12.4001C6.63996 12.5001 6.50663 12.5467 6.37996 12.5467Z" fill="#2B303B" />
+        <path d="M13.6666 8.50008H2.44663C2.17329 8.50008 1.94663 8.27341 1.94663 8.00008C1.94663 7.72674 2.17329 7.50008 2.44663 7.50008H13.6666C13.94 7.50008 14.1666 7.72674 14.1666 8.00008C14.1666 8.27341 13.94 8.50008 13.6666 8.50008Z" fill="#2B303B" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 20 20">
+        <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
+      </symbol>
+      <symbol id="icon-copy" viewBox="0 0 16 16">
+        <path d="M7.39998 15.1668H4.59998C1.99331 15.1668 0.833313 14.0068 0.833313 11.4002V8.60016C0.833313 5.9935 1.99331 4.8335 4.59998 4.8335H7.39998C10.0066 4.8335 11.1666 5.9935 11.1666 8.60016V11.4002C11.1666 14.0068 10.0066 15.1668 7.39998 15.1668ZM4.59998 5.8335C2.53331 5.8335 1.83331 6.5335 1.83331 8.60016V11.4002C1.83331 13.4668 2.53331 14.1668 4.59998 14.1668H7.39998C9.46665 14.1668 10.1666 13.4668 10.1666 11.4002V8.60016C10.1666 6.5335 9.46665 5.8335 7.39998 5.8335H4.59998Z" fill="#007BFB" />
+        <path d="M11.4 11.1668H10.6666C10.3933 11.1668 10.1666 10.9402 10.1666 10.6668V8.60016C10.1666 6.5335 9.46665 5.8335 7.39998 5.8335H5.33331C5.05998 5.8335 4.83331 5.60683 4.83331 5.3335V4.60016C4.83331 1.9935 5.99331 0.833496 8.59998 0.833496H11.4C14.0066 0.833496 15.1666 1.9935 15.1666 4.60016V7.40016C15.1666 10.0068 14.0066 11.1668 11.4 11.1668ZM11.1666 10.1668H11.4C13.4666 10.1668 14.1666 9.46683 14.1666 7.40016V4.60016C14.1666 2.5335 13.4666 1.8335 11.4 1.8335H8.59998C6.53331 1.8335 5.83331 2.5335 5.83331 4.60016V4.8335H7.39998C10.0066 4.8335 11.1666 5.9935 11.1666 8.60016V10.1668Z" fill="#007BFB" />
+      </symbol>
+      <symbol id="icon-hand" viewBox="0 0 22 23">
+        <path d="M0 22.54H22V0.54H0V22.54Z" fill="#2B303B" />
+      </symbol>
+    </svg>
+  </div>
+  <div class="wrapper">
+    <header class="header fixed z-20 w-full bg-white py-[14px] border-b-[1px] border-solid border-hawkes-blue ">
+      <div class="container flex flex-wrap">
+        <a class="header__logo flex text-base items-center mr-auto" href="index.html" aria-label="Переход на главную">
+          <div class="w-8 h-8 mr-4 rounded-full overflow-hidden">
+            <img class="w-full h-full object-cover" src="./img/logo/logo.jpg" alt="Фотография" srcset="./img/logo/logo@2x.jpg 2x" width="32" height="32" />
+          </div>
+          <span class="mr-2">Степанова Мария</span>
+          <span class="block w-[22px] h-6">
+            <img class="w-full h-full object-cover" src="./img/content/emoji/hand.jpg" srcset="./img/content/emoji/hand@2x.jpg 2x" alt="Эмодзи привет" width="22" height="24">
+          </span>
+        </a>
+        <ul class="flex flex-wrap mr-8 list-bools text-periwinkle">
+          <li class="list-bools__item">
+            <button type="button" class="text-base text-ebony hover:text-east-bay transition-colors" data-tippy-content="<a href='mailto:stepanova-14-02@yandex.ru'>Stepanova-14-02@yandex.ru</a>
+                                          <button type='button'>
+                                            <svg width='16' height='16'>
+                                              <use xlink:href='#icon-copy'></use>
+                                            </svg>
+                                          </button>">
+              e-mail
+            </button>
+          </li>
+          <li class="list-bools__item">
+            <button type="button" class="text-base text-ebony hover:text-east-bay transition-colors">telegram</button>
+          </li>
+          <li class="list-bools__item">
+            <button type="button" class="text-base text-ebony hover:text-east-bay transition-colors">dribbble</button>
+          </li>
+          <li class="list-bools__item">
+            <button type="button" class="text-base text-ebony hover:text-east-bay transition-colors">behance</button>
+          </li>
+        </ul>
+        <a href="https://career.samolet.ru/" class="block bg-ebony py-1 px-3 text-base text-white rounded-lg transition-transform ease-in-out duration-300 hover:translate-y-[-2px]">Резюме лежит здесь</a>
+      </div>
+    </header>
+    <main>
+      <section class="container grid grid-cols-[1fr_minmax(0,700px)_minmax(100px,322px)] pt-8 pb-[121px]">
+        <div class="pt-1 pr-[48px] justify-self-end">
+          <a href="#" class="flex items-center">
+            <span class="block w-4 h-4 mr-2 ">
+              <svg class="w-full h-full" width='16' height='16'>
+                <use xlink:href='#icon-arrow-left'></use>
+              </svg>
+            </span>
+            <span class="text-base text-ebony">Назад</span>
+          </a>
+        </div>
+        <div class="w-[700px]">
+          <h1 class="text-l text-ebony font-semibold mb-[24px]">Название проекта</h1>
+          <ul class="flex flex-wrap mb-8">
+            <li class="flex flex-wrap flex-col gap-x-8 min-w-[100px]">
+              <p class="text-s text-rock-blue">Год</p>
+              <p class="text-base text-ebony">2023</p>
+            </li>
+            <li class="flex flex-wrap flex-col gap-x-8 min-w-40">
+              <p class="text-s text-rock-blue">Тематика</p>
+              <p class="text-base text-ebony">HR-продукт</p>
+            </li>
+            <li class="flex flex-wrap flex-col gap-x-8 min-w-[100px]">
+              <p class="text-s text-rock-blue">Моя роль</p>
+              <p class="text-base text-ebony">Продуктовый дизайнер</p>
+            </li>
+          </ul>
+          <div class="w-full aspect-[7/4.5] mb-8">
+            <img class="w-full h-full object-cover" src="./img/content/plug/plug.jpg" srcset="./img/content/plug/plug@2x.jpg 2x" width="700" height="450" alt="Заглушка">
+          </div>
+          <div class="text-block mb-8">
+            <h2>Обзор</h2>
+            <p>Моя работа основана на анализе данных. Я провожу UX-исследования и обращаюсь к метрикам, слежу за обратной
+              связью от пользователей, чтобы лучше понимать их потребности и ожидания. Моя цель — создавать лучший
+              пользовательский путь.</p>
+            <h2>Задача</h2>
+            <p>Моя работа основана на анализе данных. Я провожу UX-исследования и обращаюсь к метрикам, слежу за обратной
+              связью от пользователей, чтобы лучше понимать их потребности и ожидания. Моя цель — создавать лучший
+              пользовательский путь.</p>
+            <h2>Что я делал</h2>
+            <p>Моя работа основана на анализе данных. Я провожу UX-исследования и обращаюсь к метрикам, слежу за обратной
+              связью от пользователей, чтобы лучше понимать их потребности и ожидания. Моя цель — создавать лучший
+              пользовательский путь.</p>
+            <h2>Что получилось</h2>
+            <p>Моя работа основана на анализе данных. Я провожу UX-исследования и обращаюсь к метрикам, слежу за обратной
+              связью от пользователей, чтобы лучше понимать их потребности и ожидания. Моя цель — создавать лучший
+              пользовательский путь.</p>
+            <h2>Детали</h2>
+            <div class="w-full aspect-[7/4.5] mb-8">
+              <img class="w-full h-full object-cover" src="./img/content/plug/plug.jpg" srcset="./img/content/plug/plug@2x.jpg 2x" width="700" height="450" alt="Заглушка">
+            </div>
+            <div class="w-full aspect-[7/4.5] mb-8">
+              <img class="w-full h-full object-cover" src="./img/content/plug/plug.jpg" srcset="./img/content/plug/plug@2x.jpg 2x" width="700" height="450" alt="Заглушка">
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex flex-col max-w-[464px] mb-4 mx-auto items-center">
+              <div class="rounded-full w-12 h-12 bg-icon-pattern">
+                <div class="w-[22px] h-8">
+                  <img class="w-full h-full object-cover" src="" alt="">
+                </div>
+              </div>
+              <p class="text-ebony text-s text-east-bay text-center mb-4">Мы посмотрели все проекты.
+                <br>
+                С удовольствием расскажу о продуктах при встрече
+              </p>
+              <a href="index.html" class="block bg-ebony py-1 px-3 text-base text-white rounded-lg transition-transform ease-in-out duration-300 hover:translate-y-[-2px]">Вернуться на главную</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex pl-4"></div>
+      </section>
+    </main>
+    <div class="modal modal--preload    " data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload   modal--fit-content   modal--no-scale   modal--some-mod " data-modal="success">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

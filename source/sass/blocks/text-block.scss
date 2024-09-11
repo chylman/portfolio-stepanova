@@ -1,0 +1,25 @@
+.text-block {
+  h2 {
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+
+    color: $color-ebony;
+  }
+
+  p {
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+
+    color: $color-east-bay;
+  }
+
+  p + p {
+    margin-bottom: 16px;
+  }
+}
